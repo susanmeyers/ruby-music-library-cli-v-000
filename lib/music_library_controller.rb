@@ -8,10 +8,10 @@ class MusicLibraryController
     MusicImporter.new(path).import
     # self.new(path)
   end
+  # def MusicImporter.import(path)
+  #   MusicImporter.new(path)
+  # # end
   
-  def MusicImporter.import(path)
-    MusicImporter.new(path)
-  end
   
   def call
     # MusicLibraryController.new(path)
