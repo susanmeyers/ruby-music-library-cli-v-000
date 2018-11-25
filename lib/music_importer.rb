@@ -8,8 +8,7 @@ class MusicImporter
   end
   
   def files
-    a = Dir.entries(@path).select {|file| file.include?(".mp3")}
-    binding.pry
+    Dir.entries(@path).select {|file| file.include?(".mp3")}
   end
   
   def import
