@@ -4,17 +4,9 @@ class MusicLibraryController
   def initialize(path='./db/mp3s')
    importer = MusicImporter.new(path)
    importer.import
-    # @path = path
-    # MusicImporter.new(path).import
-    # self.new(path)
   end
-  # def MusicImporter.import(path)
-  #   MusicImporter.new(path)
-  # # end
-  
-  
+    
   def call
-    # MusicLibraryController.new(path)
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
       puts "To list all of the artists in your library, enter 'list artists'."
