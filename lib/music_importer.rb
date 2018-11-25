@@ -1,3 +1,4 @@
+require 'pry'
 class MusicImporter
   
   attr_accessor :path, :name, :artist, :mp3
@@ -8,6 +9,7 @@ class MusicImporter
   
   def files
     Dir.entries(@path).select {|file| file.include?(".mp3")}
+    binding.pry
   end
   
   def import
