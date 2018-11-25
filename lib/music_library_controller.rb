@@ -76,7 +76,6 @@ class MusicLibraryController
        if genre = Genre.find_by_name(input)
          #binding.pry
          array = genre.songs.sort_by {|genre| genre.name}
-          
            array.each_with_index do |song, i|
              puts "#{i+1}. #{song.artist.name} - #{song.name}"
           end
