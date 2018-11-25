@@ -42,6 +42,7 @@ class MusicLibraryController
          when "play_song"
            play_song
          end
+       end
   end
   
   def list_songs
